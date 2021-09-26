@@ -1,22 +1,7 @@
 class Category {
   final String name;
-  final int numOfCourses;
+  final double price;
   final String image;
-
-  Category(this.name, this.numOfCourses, this.image);
+  final String description;
+  Category(this.name, this.price, this.image, this.description);
 }
-
-List<Category> categories = categoriesData
-    .map((item) => Category((item as dynamic)['name'], (item as dynamic)['courses'], (item as dynamic)['image']))
-    .toList();
-
-var categoriesData = [
-  {"name": "Marketing", 'courses': 17, 'image': "images/marketing.png"},
-  {"name": "UX Design", 'courses': 25, 'image': "images/ux_design.png"},
-  {
-    "name": "Photography",
-    'courses': 13,
-    'image': "images/photography.png"
-  },
-  {"name": "Business", 'courses': 17, 'image': "images/business.png"},
-];

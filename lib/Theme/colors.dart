@@ -8,3 +8,6 @@ const kBlueColor = Color(0xFF6E8AFA);
 const kBestSellerColor = Color(0xFFFFD073);
 const kGreenColor = Color(0xFF49CC96);
 const kPurpleColor = Color(0xFF61688B);
+const kTextLightColor = Color(0xFFACACAC);
+
+const kActiveIconColor = kPurpleColor;

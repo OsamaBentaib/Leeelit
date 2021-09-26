@@ -1,1 +1,1 @@
-final fontFamily = "Poppins";
+final fontFamily = "Jost";
