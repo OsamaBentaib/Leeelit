@@ -7,7 +7,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/1.webp"
+    'image': "assets/images/clothes/1.webp"
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/21.webp"
+    'image': "assets/images/clothes/21.webp"
   },
   {
     "id": 1,
@@ -23,7 +23,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/2.webp"
+    'image': "assets/images/clothes/2.webp"
   },
   {
     "id": 1,
@@ -31,7 +31,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/20.webp"
+    'image': "assets/images/clothes/20.webp"
   },
   {
     "id": 1,
@@ -39,7 +39,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/3.webp"
+    'image': "assets/images/clothes/3.webp"
   },
   {
     "id": 1,
@@ -47,7 +47,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/19.webp"
+    'image': "assets/images/clothes/19.webp"
   },
   {
     "id": 1,
@@ -55,7 +55,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/4.webp"
+    'image': "assets/images/clothes/4.webp"
   },
   {
     "id": 1,
@@ -63,7 +63,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/18.webp"
+    'image': "assets/images/clothes/18.webp"
   },
   {
     "id": 1,
@@ -71,7 +71,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/5.webp"
+    'image': "assets/images/clothes/5.webp"
   },
   {
     "id": 1,
@@ -79,7 +79,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/17.webp"
+    'image': "assets/images/clothes/17.webp"
   },
   {
     "id": 1,
@@ -87,7 +87,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/6.webp"
+    'image': "assets/images/clothes/6.webp"
   },
   {
     "id": 1,
@@ -95,7 +95,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/16.webp"
+    'image': "assets/images/clothes/16.webp"
   },
   {
     "id": 1,
@@ -103,7 +103,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/7.webp"
+    'image': "assets/images/clothes/7.webp"
   },
   {
     "id": 1,
@@ -111,7 +111,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/15.webp"
+    'image': "assets/images/clothes/15.webp"
   },
   {
     "id": 1,
@@ -119,7 +119,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/8.webp"
+    'image': "assets/images/clothes/8.webp"
   },
   {
     "id": 1,
@@ -127,7 +127,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/14.webp"
+    'image': "assets/images/clothes/14.webp"
   },
   {
     "id": 1,
@@ -135,7 +135,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/9.webp"
+    'image': "assets/images/clothes/9.webp"
   },
   {
     "id": 1,
@@ -143,7 +143,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/13.webp"
+    'image': "assets/images/clothes/13.webp"
   },
   {
     "id": 1,
@@ -151,7 +151,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 17.00,
-    'image': "images/clothes/10.webp"
+    'image': "assets/images/clothes/10.webp"
   },
   {
     "id": 1,
@@ -159,7 +159,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/12.webp"
+    'image': "assets/images/clothes/12.webp"
   },
   {
     "id": 1,
@@ -167,7 +167,7 @@ var productsData = [
     'description': dummyText,
     "title": "Square Neck Bralet And Flippy Short Co-ord Set",
     'price': 25.00,
-    'image': "images/clothes/11.webp"
+    'image': "assets/images/clothes/11.webp"
   },
 ];
 

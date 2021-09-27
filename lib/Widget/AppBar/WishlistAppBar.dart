@@ -3,12 +3,16 @@ import 'package:flutter_svg/svg.dart';
 import 'package:wearift/Components/icons/HandBag.dart';
 import 'package:wearift/Theme/colors.dart';
 
-AppBar wishlistAppBar() {
-  return AppBar(
+SliverAppBar wishlistAppBar() {
+  return SliverAppBar(
     backgroundColor: Colors.white,
     elevation: 0,
-    title: appBarTitle(),
-    centerTitle: true,
+    pinned: true,
+    expandedHeight: 120.0,
+    flexibleSpace: FlexibleSpaceBar(
+      title: appBarTitle(),
+      centerTitle: false,
+    ),
     actions: <Widget>[
       IconButton(
         icon: HandBag(
@@ -19,7 +23,9 @@ AppBar wishlistAppBar() {
         iconSize: 24.0,
         onPressed: () {},
       ),
-      SizedBox(width: 20 / 2)
+      SizedBox(
+        width: 20 / 2,
+      )
     ],
   );
 }
@@ -27,11 +33,11 @@ AppBar wishlistAppBar() {
 Widget appBarTitle({label, obscureText = false}) {
   return Container(
     child: Text(
-      "Wishlist",
+      "Wishlist (20)",
       style: TextStyle(
         color: dark,
-        fontWeight: FontWeight.w800,
-        fontSize: 30,
+        fontWeight: FontWeight.bold,
+        fontSize: 20,
       ),
     ),
   );

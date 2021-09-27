@@ -34,37 +34,48 @@ class _ProductItemWidgetState extends State<ProductItemWidget> {
       child: GestureDetector(
         onTap: press,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Expanded(
               child: Container(
                 padding: EdgeInsets.all(20),
-                // For  demo we use fixed height  and width
-                // Now we dont need them
-                // height: 180,
-                // width: double.infinity,
                 decoration: BoxDecoration(
                   color: product.color,
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Hero(
                   tag: "${product.id}",
-                  child: Image.asset(product.image),
+                  child: Image.asset(
+                    product.image,
+                  ),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20 / 4),
+              padding: const EdgeInsets.only(
+                top: 10,
+                bottom: 10,
+              ),
               child: Text(
                 // products is out demo list
                 product.title,
-                style: TextStyle(color: kTextLightColor),
+                style: TextStyle(
+                  color: kTextLightColor,
+                ),
+                textAlign: TextAlign.center,
               ),
             ),
-            Text(
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 10,
+              ),
+              child: Text(
               "\$${product.price}",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            )
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
           ],
         ),
       ),

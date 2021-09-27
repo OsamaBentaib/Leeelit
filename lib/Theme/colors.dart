@@ -11,3 +11,4 @@ const kPurpleColor = Color(0xFF61688B);
 const kTextLightColor = Color(0xFFACACAC);
 
 const kActiveIconColor = kPurpleColor;
+const kBorderColor = Color(0xFFEEEEEE);

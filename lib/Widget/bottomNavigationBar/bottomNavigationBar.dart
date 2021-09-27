@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:wearift/Components/icons/HandBag.dart';
+import 'package:wearift/Components/icons/ExploreIcon.dart';
 import 'package:wearift/Components/icons/PersonIcon.dart';
-import 'package:wearift/Components/icons/SearchIcon.dart';
 import 'package:wearift/Components/icons/StarIcon.dart';
 import 'package:wearift/Components/icons/houseIcon.dart';
 import 'package:wearift/Theme/colors.dart';
@@ -45,7 +44,7 @@ class BottomNavbar extends StatelessWidget {
                 BottomNavItem(
                   index: 1,
                   title: "Explore",
-                  icon: SearchIcon(
+                  icon: ExploreIcon(
                     color: active == 1 ? kActiveIconColor : dark,
                     size: 18,
                     active: active == 1,

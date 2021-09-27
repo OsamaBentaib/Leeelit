@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wearift/Widget/AppBar/ExploreAppBar.dart';
 import 'package:wearift/Widget/AppBar/MeAppBar.dart';
 
 class MeScreen extends StatelessWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wearift/Components/icons/HandBag.dart';
+import 'package:wearift/Components/icons/SearchIcon.dart';
 import 'package:wearift/Theme/colors.dart';
 
 SliverAppBar exploreAppBar() {
@@ -10,8 +11,18 @@ SliverAppBar exploreAppBar() {
     expandedHeight: 200.0,
     flexibleSpace: FlexibleSpaceBar(
       title: appBarTitle(),
+      centerTitle: true,
     ),
-    centerTitle: false,
+    leading: IconButton(
+      icon: SearchIcon(
+        color: dark,
+        size: 24,
+        active: false,
+      ),
+      color: dark,
+      iconSize: 24.0,
+      onPressed: () {},
+    ),
     actions: <Widget>[
       IconButton(
         icon: HandBag(
