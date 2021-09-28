@@ -1,13 +1,25 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wearift/APIs/products.dart';
-import 'package:wearift/Containers/RecommendedProducts/RecommendedProducts.dart';
 import 'package:wearift/Theme/colors.dart';
 import 'package:wearift/Widget/AppBar/HomeAppBar.dart';
 import 'package:wearift/Widget/ProductItem/ProductItem.dart';
+import 'package:wearift/graphql/client.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  HomeScreen({Key? key}) : super(key: key);
+
   @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    readAllPosts();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: homeAppBar(),
@@ -47,8 +59,8 @@ class HomeScreen extends StatelessWidget {
               childCount: products.length,
             ),
           ),
-          ],
-        ), 
+        ],
+      ),
     );
   }
 }

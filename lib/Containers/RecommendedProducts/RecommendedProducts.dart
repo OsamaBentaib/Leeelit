@@ -13,25 +13,26 @@ class _RecommendedProductsState extends State<RecommendedProducts> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        // child: GridView.builder(
-        //     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        //       crossAxisCount: 3,
-        //     ),
-        //     itemCount: 300,
-        //     itemBuilder: (BuildContext context, int index) {
-        //       return Container(
-        //         decoration: BoxDecoration(
-        //           color: Colors.grey[200],
-        //         ),
-        //         height: 300,
-        //       );
-        //     }),
+      child: GridView.builder(
+        itemCount: products.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 20,
+          childAspectRatio: 0.75,
+        ),
+        itemBuilder: (context, index) => Container(
+          decoration: BoxDecoration(
+            color: Colors.grey[200],
+          ),
+          height: 300,
+        ),
         // itemBuilder: (context, index) => ProductItemWidget(
         //   index: index,
         //   product: products[index],
         //   press: () {},
         // ),
-        // ),
-        );
+      ),
+    );
   }
 }

@@ -32,7 +32,15 @@ class _ProductItemWidgetState extends State<ProductItemWidget> {
   Widget build(BuildContext context) {
     return Container(
       child: GestureDetector(
-        onTap: press,
+        onTap: () {
+          Route route = MaterialPageRoute(
+            builder: (context) => ProductDetailsScreen(product: product),
+          );
+          Navigator.pushReplacement(
+            context,
+            route,
+          );
+        },
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -44,9 +52,10 @@ class _ProductItemWidgetState extends State<ProductItemWidget> {
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Hero(
-                  tag: "${product.id}",
+                  tag: "${product.id}$index",
                   child: Image.asset(
                     product.image,
+                    width: MediaQuery.of(context).size.width,
                   ),
                 ),
               ),
