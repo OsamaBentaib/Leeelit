@@ -6,6 +6,7 @@ import 'package:wearift/Widget/AppBar/ExploreAppBar.dart';
 import 'package:wearift/Widget/ProductItem/ProductItem.dart';
 
 class ExploreScreen extends StatelessWidget {
+  final products = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

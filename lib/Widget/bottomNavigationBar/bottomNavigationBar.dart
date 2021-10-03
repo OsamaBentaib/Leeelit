@@ -100,7 +100,7 @@ class BottomNavItem extends StatelessWidget {
             );
       },
       builder: (context, callback) {
-        return GestureDetector(
+        return InkWell(
           onTap: callback,
           child: StoreConnector<AppState, NavigatorPages>(
             converter: (store) => store.state.navigator,

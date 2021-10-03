@@ -13,16 +13,25 @@ Widget makeInput({label, obscureText = false}) {
         ),
       ),
       SizedBox(
-        height: 5,
+        height: 2,
       ),
       TextField(
         obscureText: obscureText,
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+          contentPadding: EdgeInsets.symmetric(
+            vertical: 0,
+            horizontal: 10,
+          ),
           enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFBDBDBD))),
+              borderSide: BorderSide(
+              color: Color(0xFFBDBDBD),
+            ),
+          ),
           border: OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFBDBDBD))),
+              borderSide: BorderSide(
+              color: Color(0xFFBDBDBD),
+            ),
+          ),
         ),
       ),
       SizedBox(
