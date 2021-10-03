@@ -25,9 +25,9 @@ class ProductDetailsScreen extends StatelessWidget {
                 top: 40,
               ),
               child: Hero(
-                tag: "${product.id}",
-                child: Image.asset(
-                  product.image,
+                tag: "${product.code}",
+                child: Image.network(
+                  product.articles![0].normalPicture![0].url as String,
                 ),
               ),
             ),
@@ -43,7 +43,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   child: Text(
                     // products is out demo list
-                    product.title,
+                    product.name as String,
                     style: TextStyle(
                       color: kTextLightColor,
                     ),
@@ -70,7 +70,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   child: Text(
                     // products is out demo list
-                    product.description,
+                    product.name as String,
                     style: TextStyle(
                       color: kTextLightColor,
                     ),
@@ -90,39 +90,39 @@ class ProductDetailsScreen extends StatelessWidget {
               ],
             ),
           ),
-          SliverGrid(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 0,
-              crossAxisSpacing: 0,
-              childAspectRatio: 0.75,
-            ),
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
-                return Container(
-                  decoration: BoxDecoration(
-                    color: white,
-                    border: Border(
-                      top: BorderSide(
-                        color: kBorderColor,
-                      ),
-                      right: BorderSide(
-                        color: kBorderColor,
-                      ),
-                    ),
-                  ),
-                  child: Center(
-                    child: ProductItemWidget(
-                      index: index,
-                      product: products[index],
-                      press: () {},
-                    ),
-                  ),
-                );
-              },
-              childCount: products.length,
-            ),
-          ),
+          // SliverGrid(
+          //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          //     crossAxisCount: 2,
+          //     mainAxisSpacing: 0,
+          //     crossAxisSpacing: 0,
+          //     childAspectRatio: 0.75,
+          //   ),
+          //   delegate: SliverChildBuilderDelegate(
+          //     (BuildContext context, int index) {
+          //       return Container(
+          //         decoration: BoxDecoration(
+          //           color: white,
+          //           border: Border(
+          //             top: BorderSide(
+          //               color: kBorderColor,
+          //             ),
+          //             right: BorderSide(
+          //               color: kBorderColor,
+          //             ),
+          //           ),
+          //         ),
+          //         child: Center(
+          //           child: ProductItemWidget(
+          //             index: index,
+          //             product: products[index],
+          //             press: () {},
+          //           ),
+          //         ),
+          //       );
+          //     },
+          //     childCount: products.length,
+          //   ),
+          // ),
         ],
       ),
       bottomNavigationBar: ProductBottomBar(),

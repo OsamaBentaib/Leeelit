@@ -6,6 +6,7 @@ import 'package:wearift/Widget/AppBar/WishlistAppBar.dart';
 import 'package:wearift/Widget/ProductItem/ProductItem.dart';
 
 class WishlistScreen extends StatelessWidget {
+  final products = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +47,7 @@ class WishlistScreen extends StatelessWidget {
             ),
           ),
         ],
-      ), 
+      ),
     );
   }
 }

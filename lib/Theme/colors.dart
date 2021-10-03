@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-const white = Colors.white;
-const dark = Colors.black;
-// Colors
+
+/**
+ * Colors
+ */
+// patrens
+const kheavenlyFog = Color(0xddd6dbef);
+const kheavenlyFogDark = Color(0xaaa2a7d5);
+const kBlackAtHome = Color(0xFF000000);
+const kWhiteAtHome = Color(0x000a0a0d);
+// others
 const kTextColor = Color(0xFF0D1333);
 const kBlueColor = Color(0xFF6E8AFA);
 const kBestSellerColor = Color(0xFFFFD073);
@@ -12,3 +19,5 @@ const kTextLightColor = Color(0xFFACACAC);
 
 const kActiveIconColor = kPurpleColor;
 const kBorderColor = Color(0xFFEEEEEE);
+const white = Colors.white;
+const dark = kBlackAtHome;

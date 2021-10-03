@@ -10,6 +10,7 @@ class RecommendedProducts extends StatefulWidget {
 }
 
 class _RecommendedProductsState extends State<RecommendedProducts> {
+  final products = [];
   @override
   Widget build(BuildContext context) {
     return Container(
