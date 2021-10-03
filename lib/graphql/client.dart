@@ -15,7 +15,6 @@
 import 'dart:io' show stdout, stderr, exit;
 import 'package:graphql/client.dart';
 import 'package:wearift/local.dart';
-import '../logs.dart';
 
 GraphQLClient graphqlClient() {
   final Link _link = HttpLink(
@@ -60,6 +59,4 @@ void readAllPosts() async {
 
     print(result.exception.toString());
   }
-
-  logColor(result);
 }
